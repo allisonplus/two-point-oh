@@ -1,0 +1,207 @@
+/*
+====================================
+Portfolio Section (Archive Items)
+====================================
+*/
+
+.portfolio-hero {
+	height:200px;
+	position: relative;
+	&:after {
+		content:'';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: $black;
+		opacity: 0.6;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+}
+
+.items-archive {
+	background-color:white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portfolioItem-archive {
+	position: relative;
+	background-color:$smoke;
+	width: calc( ( 100% / 2 ) - (5px * 2));
+	align-content:space-between;
+	margin-bottom:25px;
+}
+
+.portfolioImage-archive {
+	width:100%;
+}
+
+.portfolioContent-archive {
+	padding: 20px 35px 110px;
+	position: relative;
+	h2 {
+		font-size: 18px;
+		letter-spacing:1.2px;
+		font-weight:600;
+	}
+}
+
+.portfolioContent-archive {
+	&:before {
+			right:25%;
+			top: -8%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(224, 224, 224, 0);
+			border-bottom-color: $smoke;
+			border-width: 25px;
+			margin-top: -25px;
+	}
+}
+
+.tech-archive {
+	margin: 0;
+	padding: 0;
+
+	li {
+	  padding: 5px;
+	  display: inline-block;
+	  background-color: white;
+	  margin: 5px 8px 5px 0;
+	  color:#606060;
+	  font-size: 14px;
+	  // border-right:2px solid $gold;
+	}
+}
+
+.archive-btn {
+	width:40%;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+/*
+====================================
+Portfolio Section (Single Item)
+====================================
+*/
+
+.single-whole-content {
+	margin-top:3%;
+	display: flex;
+	justify-content: space-between;
+
+	// h3 {
+	// 	text-align: left;
+
+	// 	&:after {
+	// 		content: '';
+	//     display: block;
+	//     background: $gold;
+	//     width: 35px;
+	//     height: 2px;
+	//     // margin: 0 auto;
+	//     margin-top: 10px;
+	// 		margin-bottom: 30px
+	// 	}
+	// }
+}
+
+.single-left-content,
+.single-right-content {
+	// display: flex;
+	// flex-direction:column;
+	// align-content:space-between;
+	// align-content:flex-start;
+}
+
+.single-left-content {
+	width:65%;
+	// align-content:flex-start;
+	// display: flex;
+	h2 {
+		text-align: left;
+		&:after {
+			margin:initial;
+			margin: 15px 0;
+		}
+	}
+}
+
+.single-right-content {
+	// justify-content: space-between;
+	width:25%;
+	h2 {
+		font-size: 20px;
+		text-align: left;
+		// margin-top:10px;
+		padding-top:10px;
+		&:after {
+			margin:0;
+    	margin-top: 18px;
+			margin-bottom: 15px
+		}
+	}
+}
+
+// Skills Used 
+
+ul.tech {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		padding:10px 0;
+		// border: 2px solid $gold;
+		// width:70%;
+	}
+}
+
+// Single Portfolio Featured Image
+.single-portfolio-image {
+	// width:1070px;
+	margin: 0 auto;
+	display: block;
+}
+
+// Project Link Button
+.project-link {
+	width:75%;
+	margin:40px 0;
+}
+
+.navigation-archive {
+	// font-size: 50px;
+	width:100%;
+	display: flex;
+	justify-content:center;
+
+	p {
+		align-items: flex-start;
+	}
+
+	.nav-previous {
+		margin: 0;
+		margin-right:10px;
+	}
+	.nav-next {
+		margin: 0;
+		margin-left:10px;
+	}
+
+	.fa-angle-right,
+	.fa-angle-left {
+		color:#606060;
+		font-size: 50px;
+	}
+}

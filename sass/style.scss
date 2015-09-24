@@ -1,0 +1,390 @@
+/*
+* Theme Name: You Are Awesome: A Portfolio Theme
+* Theme URI: http://hackeryou.com;
+* Description: Custom Portfolio site for Allison Tarr. Built from the HackerYou Starter theme.
+* Version: 1.0
+* Author: Allison Tarr
+* Author URI: http://allisontarr.com
+*/
+
+@import 'normalize';
+// @import 'bourbon/bourbon';
+// @import 'neat/neat';
+@import 'typography';
+@import 'prism';
+@import 'navigation';
+@import 'portfolio';
+@import 'blog';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #333;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.content {
+	max-width: 1070px;
+	margin:0 auto;
+	margin-top:3%;
+}
+
+.full {
+	width: 100%;
+}
+
+.content-blog {
+	max-width:970px;
+	margin:0 auto;
+	margin-top:3%;
+}
+
+/*
+====================================
+Hero + Title Section on Front Page
+====================================
+*/
+
+.hero {
+	height:88vh;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	background-position:30% 10%;
+
+	h1 {
+		color:#FFF;
+		padding:25px 0;
+		width:100%;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 70px;
+		// line-height:60px;
+		font-weight: 900;
+	}
+	h3 {
+		font-weight: 300;
+		font-size: 16px;
+		letter-spacing: 1.4px;
+		font-style: italic;
+	}
+}
+
+.heroContent {
+	padding:50px 0;
+	border-top:2px solid white;
+	border-bottom:2px solid white;
+}
+
+.beta-hero {
+	height:200px;
+	background-size: cover;
+	position: relative;
+	&:after {
+		content:'';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: $black;
+		opacity: 0.3;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+}
+
+/*
+====================================
+Welcome Section
+====================================
+*/
+
+section.welcome {
+	padding: 45px 0;
+}
+
+.short-about {
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.intro {
+	width: 50%;
+	flex-direction:column;
+}
+
+.welcome-photo {
+	// width:25%;
+	margin:0 auto;
+}
+
+/*
+====================================
+About Page
+====================================
+*/
+
+.about {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-info {
+	width:50%;
+	background-color: $grey;
+	padding:15px 20px;
+
+	h2 {
+		margin-top:10px;
+	}
+}
+
+.about-skills {
+	padding:0 100px 100px;
+	width:45%;
+	// text-align: center;
+}
+
+/*
+====================================
+Portfolio Section (Front Page)
+====================================
+*/
+
+section.portfolio {
+	display: flex;
+	flex-direction:column;
+}
+
+.portfolioItem {
+	display: flex;
+
+	h3 {
+		&:after {
+			content: '';
+		  display: block;
+		  padding-bottom:15px;
+		  border-bottom:2px solid $gold;
+		  width:40%;
+		  margin: 0 auto;
+		}
+	}
+	.portfolioImage {
+		// width:50%;
+		display: block;
+		// max-width:585px;
+		// max-width:585px;
+	}
+	.portfolioContent-container {
+		// width:50%;
+	}
+	.portfolioContent {
+		display: flex;
+		flex-direction:column;
+		position: relative;
+		justify-content:center;
+		width:50%;
+		padding:50px;
+		background-color: $smoke;
+	}
+}
+
+.portfolioContent {
+	&:before {
+			right:100%;
+			top: 25%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(224, 224, 224, 0);
+			border-right-color: $smoke;
+			border-width: 15px;
+			margin-top: -15px;
+	}
+}
+
+.portfolioItem:nth-child(odd) {
+	flex-direction:row-reverse;
+	.portfolioContent {
+		&:before {
+			right: -5%;
+			top: 25%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(224, 224, 224, 0);
+			border-left-color: $smoke;
+			border-width: 15px;
+			margin-top: -15px;
+		}
+	}
+}
+
+.full-portfolio {
+	width:21%;
+	// display: block;
+	// border:2px solid $gold;
+	// margin: 25px auto;
+	// text-align: center;
+	// text-transform: uppercase;
+	// letter-spacing: 1.5px;
+	// padding:20px;
+
+	// &:hover {
+	// 	background:$gold;
+	// 	color:white;
+	// 	transition:all .5s ease;
+	// }
+}
+
+/*
+====================================
+Contact
+====================================
+*/
+
+section.contact {
+	background:$black;
+	color:white;
+	padding: 45px 0;
+	margin-top: 50px;
+	text-align: center;
+	h2 {
+		color:white;
+	}
+}
+
+.contact-info {
+	letter-spacing: 1.3px;
+	font-family: $default;
+}
+
+.emailMe {
+	font-family: $default;
+	display: block;
+	color:white;
+	border:2px solid white;
+	width:25%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	padding:15px 0;
+	margin-top:45px;
+	&:hover {
+		background:white;
+		color:black;
+		transition:all .5s ease;
+	}
+}
+
+//Form Section
+
+.contact-form {
+	background: white;
+	margin-top:80px;
+	padding: 100px 0;
+}
+
+//Form
+
+form.myForm {
+	width:40%;
+	display: block;
+	margin:0 auto;
+}
+
+input[type="text"],
+input[type="email"],,
+input#url,
+textarea {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  &:hover {
+  	background: #e6e6e6;
+    transition: all .8s ease;
+  }
+  &:focus {
+  	background:#e6e6e6;
+    transition: all .8s ease;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input#url {
+	padding:10px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #e6e6e6;
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder {
+   color: $black;
+   font-style: italic;
+}
+
+textarea {
+	width:100%;
+	padding: 0 10px 10px 10px;
+	height: 130px;
+	margin-bottom: 30px;
+	border: 2px solid #e6e6e6;
+}
+
+input[type="submit"] {
+	width:100%;
+	background:white;
+	margin:0;
+	padding:0;
+	box-shadow: none;
+	border:none;
+	border:2px solid $gold;
+	// padding:3%;
+	margin:1.5% 1.5% 1.5% 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1.2px;
+	&:hover {
+		background:$gold;
+		color:white;
+		transition: all .5s ease;
+	}
+}
+
+input.fpbtn {
+	padding:3%;
+}
+
+.contact-form label {
+	width:100%;
+	display: block;
+	color:$black;
+	padding:10px 10px 0 10px;
+	margin-bottom:5px;
+  font-style: italic;
+  text-align:left;
+}

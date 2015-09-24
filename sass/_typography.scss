@@ -1,0 +1,212 @@
+$black: #000;
+$grey: #e0e0e0;
+$smoke: #F6F6F6;
+$gold: #b3a68a;
+$highlight: #700548;
+
+$serif: 'Playfair Display', serif;
+$sans: 'Raleway', sans-serif;
+$default: 'Georgia', 'Times', 'Times New Roman', serif;
+
+// Basic Button Styling
+.button {
+	display: block;
+	border:2px solid $gold;
+	margin: 25px auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding:15px;
+	transition:all .5s ease-in-out;
+
+
+	&:hover {
+		background:$gold;
+		color:white;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:0;
+	padding:0;
+	font-family:$serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 45px;
+	text-align: center;
+	a {
+		color: #FFF;
+	}
+}
+
+h2 {
+	color:$black;
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 1.6px;
+	&:after {
+		content: '';
+    display: block;
+    background: $gold;
+    width: 35px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 10px;
+		margin-bottom: 30px
+	}
+}
+
+h3 {
+	// color:#FFF;
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+	&:hover {
+		color: $gold;
+	}
+}
+
+// Page Title on Blog (home.php) & Portfolio Archive (archive-portfolio.php)
+
+.pg-title {
+	font-size: 45px;
+	font-weight:400;
+	color:white;
+	padding:0 20px 5px;
+	position: absolute;
+	top:30%;
+	left:50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	letter-spacing:1.6px;
+}
+
+
+/* paragraphs */
+
+p {
+	line-height: 1.5;
+}
+
+/*blockquotes*/
+
+blockquote {
+	// background: #F7F7F7;
+	font-size: 18px;
+	font-style: italic;
+	margin: 0;
+	padding: 20px;
+	border-left: 2px solid $gold;
+	p {
+		margin-top: 0;
+	}
+}
+
+h4 {
+	text-align: left;
+	font-style: initial;
+	font-weight: 300;
+	color:$gold;
+	// margin-left:10px;
+	padding-left:25px;
+	&:before {
+		content: '';
+    clear: both;
+    width: 20px;
+    height: 2px;
+    background: $gold;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -13px;
+    margin-left: -25px;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 3px;
+}
+
+/*PRE*/
+
+pre {
+	// max-width:960px;
+// 	background-color:$smoke;
+// 	padding: 20px 55px;
+// 	border-radius: 2px;
+// 	border: 1px solid $grey;
+}
+
+code {
+	// max-width:960px;
+// 	background-color:$smoke;
+// 	border-radius: 2px;
+// 	border: 1px solid $grey;
+}
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img {
+	&.alignleft {
+		padding-right: 5px;
+	}
+	&.alignright {
+		padding-left: 5px;
+	}
+}
+
+.clear {
+	width: 100%;
+	float: left;
+	clear: both;
+}
