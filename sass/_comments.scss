@@ -14,7 +14,7 @@ h3 {
 	}
 }
 
-.commentlist li {
+.comment-list li {
 	&.comment {
 		border-bottom: 1px solid #e7e7e7;
 		line-height: 24px;
@@ -41,7 +41,7 @@ h3 {
 	}
 }
 
-.commentlist {
+.comment-list {
 	ol {
 		list-style: decimal;
 	}
@@ -52,7 +52,24 @@ h3 {
 	}
 }
 
+.comment-content {
+	padding-left:120px;
+	p {
+		margin:0;
+	}
+}
+
+.comment-meta {
+	display: inline-block;
+}
+
+.comment-metadata {
+	float: left;
+}
+
 .comment-author {
+	float: left;
+
 	cite {
 		color: #000000;
 		font-style: normal;
@@ -60,12 +77,15 @@ h3 {
 	}
 	.says {
 		font-style: italic;
+		padding-right:5px;
 	}
 }
 
 .comment-meta {
 	font-size: 12px;
 	margin: 0 0 5px;
+	text-align:left;
+	padding-left:120px;
 	a {
 		&:link, &:visited {
 			color: #888888;
@@ -76,7 +96,7 @@ h3 {
 
 .reply {
 	font-size: 12px;
-	padding: 0 0 24px;
+	padding: 5px 0 24px 120px;
 	a {
 		color: #888888;
 	}
@@ -84,11 +104,13 @@ h3 {
 
 a.comment-edit-link {
 	color: #888888;
+	margin-left:15px;
 }
 
-.commentlist .children li {
+.comment-list .children li {
 	border: none;
 	margin: 0;
+	// background-color: pink;
 }
 
 #comments .pingback {
@@ -97,7 +119,7 @@ a.comment-edit-link {
 	border-bottom: 1px solid #e7e7e7;
 }
 
-.commentlist li.comment + li.pingback {
+.comment-list li.comment + li.pingback {
 	margin-top: -6px;
 }
 
@@ -210,7 +232,7 @@ p.form-allowed-tags, .nocomments {
 	display: none;
 }
 
-.commentlist {
+.comment-list {
 	list-style: none;
 	margin: 0;
 	.children {
@@ -218,6 +240,11 @@ p.form-allowed-tags, .nocomments {
 		margin: 0;
 	}
 }
+
+li.thread-even {
+	// background-color:magenta;
+}
+
 
 .comment-meta a {
 	&:active, &:hover {

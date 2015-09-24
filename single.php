@@ -11,7 +11,7 @@
 
           <div class="meta-data">
             <p class="date"><?php echo get_the_date(); ?> in </p>
-
+            
             <?php 
             $category = get_the_category(); 
 
@@ -21,6 +21,7 @@
             </div> <!--/.meta-data-->
 
           <div class="entry-content">
+
             <?php the_content(); ?>
             <?php wp_link_pages(array(
               'before' => '<div class="page-link"> Pages: ',

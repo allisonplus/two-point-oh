@@ -1,7 +1,3 @@
-.post {
-	// background-color: $smoke;
-}
-
 .content-blog {
 	h3 {
 		text-align:left;
@@ -45,7 +41,6 @@
 
 .category {
 	color:$gold;
-	// margin-left: 30px;
 }
 
 .readMore {
@@ -91,12 +86,11 @@ ul.tags {
 		align-items: flex-start;
 	}
 
-	.nav-previous {
-		margin: 0;
-	}
+	.nav-previous,
 	.nav-next {
 		margin: 0;
 	}
+	
 }
 
 span.before-after {
