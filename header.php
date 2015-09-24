@@ -40,19 +40,19 @@
   </div> <!--/.hero-->
 
   <nav>
-    <div class="container">
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_locations' => 'left',
         'menu' => 'left'
       )); ?>
 
+      <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_locations' => 'right',
         'menu' => 'right'
       )); ?>
-    </div> <!--/.container-->
   </nav>
 
   <?php // If it's the Blog ?>
@@ -61,7 +61,16 @@
     <nav>
       <?php wp_nav_menu( array(
         'container' => false,
-        'theme_locations' => 'primary'
+        'theme_locations' => 'left',
+        'menu' => 'left'
+      )); ?>
+
+      <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'right',
+        'menu' => 'right'
       )); ?>
     </nav>
 
@@ -81,7 +90,16 @@
   <nav>
     <?php wp_nav_menu( array(
       'container' => false,
-      'theme_locations' => 'primary'
+      'theme_locations' => 'left',
+      'menu' => 'left'
+    )); ?>
+
+    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_locations' => 'right',
+      'menu' => 'right'
     )); ?>
   </nav>
 
@@ -96,7 +114,16 @@
   <nav>
     <?php wp_nav_menu( array(
       'container' => false,
-      'theme_locations' => 'primary'
+      'theme_locations' => 'left',
+      'menu' => 'left'
+    )); ?>
+
+    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_locations' => 'right',
+      'menu' => 'right'
     )); ?>
   </nav>
 
@@ -112,7 +139,16 @@
   <nav>
     <?php wp_nav_menu( array(
       'container' => false,
-      'theme_locations' => 'primary'
+      'theme_locations' => 'left',
+      'menu' => 'left'
+    )); ?>
+
+    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_locations' => 'right',
+      'menu' => 'right'
     )); ?>
   </nav>
 
@@ -123,7 +159,16 @@
   <nav>
     <?php wp_nav_menu( array(
       'container' => false,
-      'theme_locations' => 'primary'
+      'theme_locations' => 'left',
+      'menu' => 'left'
+    )); ?>
+
+    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_locations' => 'right',
+      'menu' => 'right'
     )); ?>
   </nav>
 
