@@ -88,6 +88,15 @@ endif;
 
 add_action( 'after_setup_theme', 'theme_setup' );
 
+//Added to enable replies + threaded comments
+function enable_threaded_comments(){
+if (!is_admin()) {
+     if (is_singular() && comments_open() && (get_option('thread_comments') == 1))
+          wp_enqueue_script('comment-reply');
+     }
+}
+add_action('get_header', 'enable_threaded_comments');
+
 
 /* Add all our JavaScript files here.
 We'll let WordPress add them to our templates automatically instead
@@ -174,7 +183,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a class="readMore" href="'. get_permalink() . '">Read More <span class="meta-nav"></span></a>';
+	return ' <a class="readMore button" href="'. get_permalink() . '">Read More <span class="meta-nav"></span></a>';
 }
 
 /**

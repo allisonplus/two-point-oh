@@ -46,7 +46,7 @@
         'menu' => 'left'
       )); ?>
 
-      <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
       <?php wp_nav_menu( array(
         'container' => false,
@@ -65,7 +65,7 @@
         'menu' => 'left'
       )); ?>
 
-      <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
       <?php wp_nav_menu( array(
         'container' => false,
@@ -94,7 +94,7 @@
       'menu' => 'left'
     )); ?>
 
-    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
     <?php wp_nav_menu( array(
       'container' => false,
@@ -118,7 +118,7 @@
       'menu' => 'left'
     )); ?>
 
-    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
     <?php wp_nav_menu( array(
       'container' => false,
@@ -143,7 +143,7 @@
       'menu' => 'left'
     )); ?>
 
-    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
     <?php wp_nav_menu( array(
       'container' => false,
@@ -163,7 +163,7 @@
       'menu' => 'left'
     )); ?>
 
-    <img class="home-icon" src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="">
+    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
     <?php wp_nav_menu( array(
       'container' => false,
