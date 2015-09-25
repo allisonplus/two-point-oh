@@ -147,9 +147,13 @@ About Page
 }
 
 .about-info {
-	width:50%;
+	width:85%;
 	background-color: $grey;
 	padding:15px 20px;
+	// line-height: 250%;
+	p {
+		line-height: 2;
+	}
 
 	h2 {
 		margin-top:10px;
@@ -157,9 +161,37 @@ About Page
 }
 
 .about-skills {
-	padding:0 100px 100px;
-	width:45%;
-	// text-align: center;
+	// background-color: $grey;
+	// padding:0 100px 100px;
+	// padding:0 20px 100px;
+	// width:40%;
+}
+
+.factoid {
+	display: flex;
+	// background-color: white;
+	// background-color: $grey;
+	justify-content:center;
+
+	.fa {
+		font-size: 30px;
+		color: $gold;
+	}
+
+	.fact-content {
+		display: flex;
+		flex-direction:column;
+		padding:0 25px;
+		width:65%;
+
+		h3 {
+			text-align: left;
+		}
+
+		p {
+			margin-top: 5px;
+		}
+	}
 }
 
 /*

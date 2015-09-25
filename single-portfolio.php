@@ -51,8 +51,6 @@
           <p class="nav-next"><?php next_post_link('%link', '<i class="fa fa-angle-right"></i>'); ?></p>
         </div><!-- #nav-below -->
 
-        <?php comments_template( '', true ); ?>
-
       <?php endwhile; // end of the loop. ?>
 
     </div> <!-- /.content -->

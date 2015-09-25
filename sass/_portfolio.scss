@@ -78,7 +78,6 @@ Portfolio Section (Archive Items)
 	  margin: 5px 8px 5px 0;
 	  color:#606060;
 	  font-size: 14px;
-	  // border-right:2px solid $gold;
 	}
 }
 
@@ -100,21 +99,6 @@ Portfolio Section (Single Item)
 	margin-top:3%;
 	display: flex;
 	justify-content: space-between;
-
-	// h3 {
-	// 	text-align: left;
-
-	// 	&:after {
-	// 		content: '';
-	//     display: block;
-	//     background: $gold;
-	//     width: 35px;
-	//     height: 2px;
-	//     // margin: 0 auto;
-	//     margin-top: 10px;
-	// 		margin-bottom: 30px
-	// 	}
-	// }
 }
 
 .single-left-content,
@@ -127,8 +111,6 @@ Portfolio Section (Single Item)
 
 .single-left-content {
 	width:65%;
-	// align-content:flex-start;
-	// display: flex;
 	h2 {
 		text-align: left;
 		&:after {
@@ -139,12 +121,10 @@ Portfolio Section (Single Item)
 }
 
 .single-right-content {
-	// justify-content: space-between;
 	width:25%;
 	h2 {
 		font-size: 20px;
 		text-align: left;
-		// margin-top:10px;
 		padding-top:10px;
 		&:after {
 			margin:0;
@@ -162,14 +142,10 @@ ul.tech {
 	padding: 0;
 	li {
 		padding:10px 0;
-		// border: 2px solid $gold;
-		// width:70%;
 	}
 }
-
 // Single Portfolio Featured Image
 .single-portfolio-image {
-	// width:1070px;
 	margin: 0 auto;
 	display: block;
 }
@@ -181,7 +157,6 @@ ul.tech {
 }
 
 .navigation-archive {
-	// font-size: 50px;
 	width:100%;
 	display: flex;
 	justify-content:center;
