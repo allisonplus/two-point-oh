@@ -18,9 +18,18 @@
 
         </div> <!--/.about-info-->
 
-				<div class="about-skills">
-					<h2>Skills</h2>
-	    	  <p><?php the_field('skills'); ?></p>
+				<div class="about-things">
+					<h2>Things To Know</h2>
+
+          <?php while( has_sub_field('factoids') ): ?>
+            <div class="factoid">
+              <?php the_sub_field('icon'); ?>
+              <div class="fact-content">
+                <h3><?php the_sub_field('fact_title'); ?></h3>
+                <p><?php the_sub_field('fact'); ?></p>
+              </div>
+            </div> <!--/.factoid-->
+          <?php endwhile; ?>
         </div> <!--/.about-skills-->
 
       <?php endwhile; // end the loop?>
