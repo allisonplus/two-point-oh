@@ -8,8 +8,6 @@
 */
 
 @import 'normalize';
-// @import 'bourbon/bourbon';
-// @import 'neat/neat';
 @import 'typography';
 @import 'prism';
 @import 'navigation';
@@ -74,7 +72,6 @@ Hero + Title Section on Front Page
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		font-size: 70px;
-		// line-height:60px;
 		font-weight: 900;
 	}
 	h3 {
@@ -150,7 +147,6 @@ About Page
 	width:85%;
 	background-color: $grey;
 	padding:15px 20px;
-	// line-height: 250%;
 	p {
 		line-height: 2;
 	}
@@ -218,14 +214,12 @@ section.portfolio {
 		  margin: 0 auto;
 		}
 	}
+	.portfolioImage-container {
+		width:50%;
+	}
 	.portfolioImage {
-		// width:50%;
 		display: block;
 		// max-width:585px;
-		// max-width:585px;
-	}
-	.portfolioContent-container {
-		// width:50%;
 	}
 	.portfolioContent {
 		display: flex;
@@ -420,3 +414,5 @@ input.fpbtn {
   font-style: italic;
   text-align:left;
 }
+
+@import 'responsive';

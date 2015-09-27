@@ -39,8 +39,8 @@
         </div><!-- #post-## -->
 
         <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '<span class="before-after">Previous Post:</span> %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '<span class="before-after">Next Post:</span> %title'); ?></p>
+          <p class="nav-previous"><?php previous_post_link('%link', '<span class="before-after"><i class="fa fa-angle-left"></i>Previous Post</span>'); ?></p>
+          <p class="nav-next"><?php next_post_link('%link', '<span class="before-after">Next Post <i class="fa fa-angle-right"></i></span>'); ?></p>
         </div><!-- #nav-below -->
 
     </div> <!-- /.content -->
