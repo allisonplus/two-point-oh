@@ -12,6 +12,21 @@ nav {
 	width:18%;
 }
 
+.mobile-icon {
+	display: none;
+	font-size: 40px;
+	color:$smoke;
+}
+
+.sticky {
+	width: 100%;
+	z-index: 200;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	margin: 0;
+}
+
 ul.menu {
 	font-family: $sans;
 	margin: 0;
