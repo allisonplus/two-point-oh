@@ -1,6 +1,6 @@
 /*
 * Theme Name: You Are Awesome: A Portfolio Theme
-* Theme URI: http://hackeryou.com;
+* Theme URI: http://allisontarr.com;
 * Description: Custom Portfolio site for Allison Tarr. Built from the HackerYou Starter theme.
 * Version: 1.0
 * Author: Allison Tarr
@@ -65,17 +65,17 @@ Hero + Title Section on Front Page
 	justify-content:center;
 	background-size:cover;
 	background-repeat:no-repeat;
-	// &:after {
-	// 	content:'';
-	// 	position: absolute;
-	// 	height: 92vh;
-	// 	width: 100%;
-	// 	background-color: $black;
-	// 	opacity: 0.3;
-	// 	top: 0;
-	// 	left: 0;
-	// 	bottom: 0;
-	// }
+	&:after {
+		content:'';
+		position: absolute;
+		height: 88vh;
+		width: 100%;
+		background-color: $black;
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	}
 
 	h1 {
 		color:#FFF;
@@ -91,6 +91,7 @@ Hero + Title Section on Front Page
 		font-size: 16px;
 		letter-spacing: 1.4px;
 		font-style: italic;
+		color:$smoke;
 	}
 }
 
@@ -98,7 +99,7 @@ Hero + Title Section on Front Page
 	padding:50px 0;
 	border-top:2px solid white;
 	border-bottom:2px solid white;
-	// z-index: 10;
+	z-index: 10;
 }
 
 .beta-hero {

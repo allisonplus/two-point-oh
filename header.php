@@ -40,6 +40,7 @@
   </div> <!--/.hero-->
 
   <nav>
+      <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_locations' => 'left',
@@ -59,6 +60,7 @@
   <?php } elseif (is_home() ) { ?>
 
     <nav>
+      <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_locations' => 'left',
@@ -88,6 +90,7 @@
   <?php } elseif (is_singular('post') ) { ?>
 
   <nav>
+    <a href="#" class="mobile-icon">&#9776;</a>
     <?php wp_nav_menu( array(
       'container' => false,
       'theme_locations' => 'left',
@@ -112,6 +115,7 @@
   <?php } elseif (get_post_type() == 'portfolio' && is_archive()) { ?>
 
   <nav>
+    <a href="#" class="mobile-icon">&#9776;</a>
     <?php wp_nav_menu( array(
       'container' => false,
       'theme_locations' => 'left',
@@ -137,6 +141,7 @@
   <?php } elseif (is_singular('portfolio') ) { ?>
 
   <nav>
+    <a href="#" class="mobile-icon">&#9776;</a>
     <?php wp_nav_menu( array(
       'container' => false,
       'theme_locations' => 'left',
@@ -157,6 +162,7 @@
   <?php } else { ?>
 
   <nav>
+    <a href="#" class="mobile-icon">&#9776;</a>
     <?php wp_nav_menu( array(
       'container' => false,
       'theme_locations' => 'left',
