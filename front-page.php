@@ -6,9 +6,12 @@
     <section class="welcome" id="about">
 	    <h2>Welcome!</h2>
 	    <div class="container short-about">
-	    	<?php $bio = get_field('bio_photo', '5'); ?>
-	      <img class="welcome-photo" src="<?php echo $bio['sizes']['about']; ?> " alt="">
-	      <div class="intro"><?php the_field('brief_intro', '5'); ?></div>
+	      <div class="intro"><?php the_field('autobiographical_snippet', '12'); ?></div>
+	    	<?php $bio = get_field('autobiographical_photo', '12'); ?>
+	      
+	      <div class="welcome-photo-container">
+		      <img class="welcome-photo" src="<?php echo $bio['sizes']['portfolio-front']; ?> " alt="Portrait of Allison smiling in front of brightly coloured graffiti wall">
+	      </div> <!--/.welcome-photo-container-->
 	    	
 			</div> <!--/.container-->
     </section> <!--/.welcome-->
@@ -41,7 +44,7 @@
 	    	  
 	    	    <p><?php the_field('blurb'); ?></p>
 
-	    			<!-- <a class="live" href="<?php the_field('url'); ?>" target="_blank">View Live</a> -->
+	    			<a class="button to-single" href="<?php the_field('url'); ?>" target="_blank">Read More</a>
 	    	  </div> <!--/.portfolioContent-->
 	    	</div> <!--/.portfolioItem-->
 
@@ -53,7 +56,7 @@
 	    	  
 	    	<?php endif; ?>
 
-	    	<a class="button full-portfolio" href="http://localhost:8888/portfolio2015/portfolio" target="_blank">See Full Portfolio</a>
+	    	<a class="button full-portfolio" href="http://localhost:8888/portfolio2015/portfolio">See Full Portfolio</a>
 			</div> <!--/.container-->
 
     </section> <!--/.portfolio-->

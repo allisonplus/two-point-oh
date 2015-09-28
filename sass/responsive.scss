@@ -123,6 +123,14 @@ Media Queries (Front Page)
 	.blog-post-text h2:after {
 		margin-top:15px;
 	}
+	.meta-data {
+    margin: 0;
+  }
+  .entry-title {
+  	&:after {
+  		margin-bottom:15px;
+  	}
+  }
 	.entry-content img {
     max-width: 570px;
     height: auto;
@@ -133,5 +141,43 @@ Media Queries (Front Page)
 	.navigation {
 		font-size: 14px;
 	}
+
+}
+
+@media all and (max-width: 768px) {
+
+.intro p {
+	line-height: 1.4;
+}
+
+.to-single {
+	margin:5px auto;
+	padding:8px;
+	font-size: 14px;
+}
+
+.about {
+	flex-direction:column;
+}
+
+.about-info {
+	width:100%;
+	padding:15px 40px;
+}
+
+.about-things {
+	h2 {
+		width:100%;
+	}
+	width:100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.factoid {
+	flex-wrap:wrap;
+	flex-direction:row;
+	width:50%;
+}
 
 }

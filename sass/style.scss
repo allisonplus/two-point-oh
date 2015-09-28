@@ -63,7 +63,19 @@ Hero + Title Section on Front Page
 	display: flex;
 	align-items:center;
 	justify-content:center;
-	background-position:30% 10%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	// &:after {
+	// 	content:'';
+	// 	position: absolute;
+	// 	height: 92vh;
+	// 	width: 100%;
+	// 	background-color: $black;
+	// 	opacity: 0.3;
+	// 	top: 0;
+	// 	left: 0;
+	// 	bottom: 0;
+	// }
 
 	h1 {
 		color:#FFF;
@@ -86,6 +98,7 @@ Hero + Title Section on Front Page
 	padding:50px 0;
 	border-top:2px solid white;
 	border-bottom:2px solid white;
+	// z-index: 10;
 }
 
 .beta-hero {
@@ -125,10 +138,19 @@ section.welcome {
 .intro {
 	width: 50%;
 	flex-direction:column;
+	p {
+		line-height: 2;
+		padding-right:8%;
+	}
+}
+
+.welcome-photo-container {
+	width:50%;
 }
 
 .welcome-photo {
 	// width:25%;
+	max-width:100%;
 	margin:0 auto;
 }
 
@@ -144,7 +166,8 @@ About Page
 }
 
 .about-info {
-	width:85%;
+	// width:85%;
+	width:55%;
 	background-color: $grey;
 	padding:15px 20px;
 	p {
@@ -156,18 +179,14 @@ About Page
 	}
 }
 
-.about-skills {
-	// background-color: $grey;
-	// padding:0 100px 100px;
-	// padding:0 20px 100px;
-	// width:40%;
+.about-things {
+	width:45%;
 }
 
 .factoid {
 	display: flex;
-	// background-color: white;
-	// background-color: $grey;
 	justify-content:center;
+	margin-bottom: 10px;
 
 	.fa {
 		font-size: 30px;
@@ -177,7 +196,7 @@ About Page
 	.fact-content {
 		display: flex;
 		flex-direction:column;
-		padding:0 25px;
+		padding:0 15px;
 		width:65%;
 
 		h3 {
