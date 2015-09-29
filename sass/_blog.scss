@@ -96,4 +96,10 @@ ul.tags {
 span.before-after {
 	color:$gold;
 	font-style: italic;
+	.fa-angle-left {
+		padding-right:10px;
+	}
+	.fa-angle-right {
+		padding-left:10px;
+	}
 }

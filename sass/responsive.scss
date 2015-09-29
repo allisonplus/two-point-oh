@@ -217,20 +217,164 @@ Media Queries (Front Page)
 @media all and (max-width: 700px) {
 	//General Styling
 	.container {
-		max-width:650px;
+		max-width:600px;
 	}
 	.content {
-		max-width:650px;
+		max-width:600px;
 	}
-	.content-blog {
-		max-width:650px;
+	.content-blog,
+	.entry-content img {
+		max-width:600px;
 	}
 	.full-portfolio {
 		width:40%;
 	}
+	.portfolioItem:nth-child(odd) .portfolioContent:before {
+		right: -10%;
+	}
+
+	.emailMe {
+	  width: 40%;
+	}
+
+	form.myForm {
+		width:70%;
+	}
+
+	//About Page 
+	.about-things {
+		margin-top:4%;
+	}
+
+	//Portfolio Archive
+	.portfolioContent-archive h2 {
+		font-size: 20px;
+	}
+	.archive-btn {
+    width: 30%;
+	}
+
+	//Portfolio Single 
+	.single-left-content {
+    width: 60%;
+	}
+
+	.single-right-content {
+		width: 27%;
+	}
+
+	//Blog
+	.meta-data {
+	  margin: 10px 0;
+	}
 
 }
 
+@media all and (max-width: 600px) {
+	//General Styling
+	.container {
+		max-width:500px;
+	}
+	.content {
+		max-width:500px;
+	}
+	.content-blog,
+	.entry-content img {
+		max-width:500px;
+	}
+
+	//Front Page
+	.hero h1 {
+	  font-size: 50px;
+	}
+	section.welcome {
+		padding: 25px 0 45px;
+	}
+	.short-about {
+		flex-direction:column;
+	}
+	.intro,
+	.welcome-photo-container {
+		width: 100%;
+	}
+	.portfolioItem:nth-child(odd) .portfolioContent:before {
+	  right: -12%;
+	}
+	.full-portfolio {
+	  width: 50%;
+	}
+	.emailMe {
+  	width: 45%;
+	}
+
+	//Portfolio Archive
+	.archive-btn {
+  	width: 40%;
+	}
+	//Portfolio Single
+	.single-right-content {
+  	width: 32%;
+	}
+
+}
+
+@media all and (max-width: 500px) {
+	//General Styling
+	.container {
+		max-width:450px;
+	}
+	.content {
+		max-width:450px;
+	}
+	.content-blog,
+	.entry-content img {
+		max-width:450px;
+	}
+	.full-portfolio {
+    width: 55%;
+	}
+	.portfolioItem:nth-child(odd) .portfolioContent:before {
+	  right: -13%;
+	}
+	.emailMe {
+	  width: 50%;
+	}
+
+	//About Page
+	.about-info {
+	  padding: 15px 25px;
+	}
+	.factoid {
+		width:100%;
+	}
+	.factoid .fact-content {
+		width:80%;
+	}
+	.about-info {
+		padding:10px 20px;
+	}
+	.about-info p {
+		font-size:18px;
+	}
+	.about-things {
+		padding-top:5%;
+	}
+
+	//Portfolio Single Page
+	.single-whole-content {
+		flex-direction:column;
+		align-items:center;
+	}
+	.single-left-content {
+		width:90%;
+	}
+	.single-right-content {
+		width: 90%;
+	}
+}
+
+
+//**====CHANGE TO MOBILE MENU====**//
 @media all and (max-width: 414px) {
 	//General Styling
 	.container {
@@ -239,7 +383,8 @@ Media Queries (Front Page)
 	.content {
 		max-width:400px;
 	}
-	.content-blog {
+	.content-blog,
+	.entry-content img {
 		max-width:400px;
 	}
 
@@ -295,14 +440,6 @@ Media Queries (Front Page)
 		height:80vh;
 	}
 
-	section.welcome {
-		padding: 25px 0 45px;
-	}
-
-	.short-about {
-		flex-direction:column;
-	}
-
 	.intro {
 		width: 90%;
 	}
@@ -353,28 +490,6 @@ Media Queries (Front Page)
 		width:75%;
 	}
 
-	//About Page
-
-	.factoid {
-		width:100%;
-	}
-
-	.factoid .fact-content {
-		width:80%;
-	}
-
-	.about-info {
-		padding:10px 20px;
-	}
-
-	.about-info p {
-		font-size:18px;
-	}
-
-	.about-things {
-		padding-top:5%;
-	}
-
 	//Portfolio Archive Page
 
 	.portfolioItem-archive {
@@ -393,19 +508,6 @@ Media Queries (Front Page)
 
 	.archive-btn {
 		width:50%;
-	}
-
-	//Portfolio Single Page
-	.single-whole-content {
-		flex-direction:column;
-		align-items:center;
-	}
-
-	.single-left-content {
-		width:90%;
-	}
-	.single-right-content {
-		width: 90%;
 	}
 
 	//Blog
@@ -460,10 +562,6 @@ Media Queries (Front Page)
 	}
 	.content-blog {
 		max-width:375px;
-	}
-
-	.hero:after {
-		height:87.5vh;
 	}
 
 	.full-portfolio {
