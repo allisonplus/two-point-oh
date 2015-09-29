@@ -24,6 +24,7 @@ $(document).ready(function() {
       if ($(window).scrollTop() > totalHeight) {
         $('nav').addClass('sticky');
         $('.main').css({"margin-top":"70px"});
+
         } else {
         // resetting nav when scrolled up
         $('nav').removeClass('sticky');
@@ -36,8 +37,13 @@ $(document).ready(function() {
 
     $('nav').addClass('sticky');
     $('body').css({
-        "margin-top":"70px"
+        "margin-top":"105px"
     });
 
   } //end else statement
 }); //end function
+
+
+$(window).on('load resize', function(){
+  // do the things
+})

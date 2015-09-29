@@ -40,6 +40,7 @@
   </div> <!--/.hero-->
 
   <nav>
+    <div class="nav-container">
       <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
@@ -54,26 +55,29 @@
         'theme_locations' => 'right',
         'menu' => 'right'
       )); ?>
+    </div> <!--/.nav-container-->
   </nav>
 
   <?php // If it's the Blog ?>
   <?php } elseif (is_home() ) { ?>
 
     <nav>
-      <a href="#" class="mobile-icon">&#9776;</a>
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'left',
-        'menu' => 'left'
-      )); ?>
+      <div class="nav-container">
+        <a href="#" class="mobile-icon">&#9776;</a>
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_locations' => 'left',
+          'menu' => 'left'
+        )); ?>
 
-      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
+        <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'right',
-        'menu' => 'right'
-      )); ?>
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_locations' => 'right',
+          'menu' => 'right'
+        )); ?>
+      </div> <!--/.nav-container-->
     </nav>
 
     <?php 
@@ -90,20 +94,22 @@
   <?php } elseif (is_singular('post') ) { ?>
 
   <nav>
-    <a href="#" class="mobile-icon">&#9776;</a>
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'left',
-      'menu' => 'left'
-    )); ?>
+    <div class="nav-container">
+      <a href="#" class="mobile-icon">&#9776;</a>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'left',
+        'menu' => 'left'
+      )); ?>
 
-    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
+      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'right',
-      'menu' => 'right'
-    )); ?>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'right',
+        'menu' => 'right'
+      )); ?>
+    </div> <!--/.nav-container-->
   </nav>
 
   <?php $blogImage = get_field('blog_header_image', 'option'); ?>
@@ -115,20 +121,22 @@
   <?php } elseif (get_post_type() == 'portfolio' && is_archive()) { ?>
 
   <nav>
-    <a href="#" class="mobile-icon">&#9776;</a>
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'left',
-      'menu' => 'left'
-    )); ?>
+    <div class="nav-container">
+      <a href="#" class="mobile-icon">&#9776;</a>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'left',
+        'menu' => 'left'
+      )); ?>
 
-    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
+      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'right',
-      'menu' => 'right'
-    )); ?>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'right',
+        'menu' => 'right'
+      )); ?>
+    </div> <!--/.nav-container-->
   </nav>
 
   <?php $portfolioImage = get_field('portfolio_header_image', 'option'); ?>
@@ -141,20 +149,22 @@
   <?php } elseif (is_singular('portfolio') ) { ?>
 
   <nav>
-    <a href="#" class="mobile-icon">&#9776;</a>
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'left',
-      'menu' => 'left'
-    )); ?>
+    <div class="nav-container">
+      <a href="#" class="mobile-icon">&#9776;</a>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'left',
+        'menu' => 'left'
+      )); ?>
 
-    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
+      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'right',
-      'menu' => 'right'
-    )); ?>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'right',
+        'menu' => 'right'
+      )); ?>
+    </div> <!--/.nav-container-->
   </nav>
 
 
@@ -162,20 +172,22 @@
   <?php } else { ?>
 
   <nav>
-    <a href="#" class="mobile-icon">&#9776;</a>
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'left',
-      'menu' => 'left'
-    )); ?>
+    <div class="nav-container">
+      <a href="#" class="mobile-icon">&#9776;</a>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'left',
+        'menu' => 'left'
+      )); ?>
 
-    <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
+      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'right',
-      'menu' => 'right'
-    )); ?>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'right',
+        'menu' => 'right'
+      )); ?>
+    </div> <!--/.nav-container-->
   </nav>
 
   <?php 
