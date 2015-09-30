@@ -197,6 +197,7 @@
   ?>
 
   <div class="beta-hero" style="background-image: url(<?= $thumb_url ?>)">
+    <h3 class="pg-title"><?php echo get_the_title(); ?></h3>
   </div>
 
   <?php } ?>

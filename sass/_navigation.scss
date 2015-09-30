@@ -10,8 +10,7 @@ nav {
 
 .nav-container {
 	max-width: 800px;
-	// margin:1% auto;
-	
+	margin:1% auto;
 	display: flex;
 	flex-direction:row;
 	justify-content:space-between;
@@ -37,6 +36,10 @@ nav {
 	background-color: white;
 	margin: 0;
 	transform: translateX(-50%);
+}
+
+.sticky-margin {
+	margin-top:70px;
 }
 
 ul.menu {

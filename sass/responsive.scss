@@ -387,6 +387,14 @@ Media Queries (Front Page)
 	.entry-content img {
 		max-width:400px;
 	}
+	
+	.nav-container {
+		margin:0 auto;
+	}
+
+	.beta-hero {
+		margin-top:0;
+	}
 
 	h2:after {
 		margin-bottom:20px;
@@ -419,9 +427,6 @@ Media Queries (Front Page)
 
 	ul#menu-left {
 		padding-bottom:0;
-	}
-	ul#menu-right {
-		padding-top:0;
 	}
 
 	ul.menu li {
@@ -585,6 +590,11 @@ Media Queries (Front Page)
 	}
 	.content-blog {
 		max-width:300px;
+	}
+
+	//Front Page
+	.hero h1 {
+  	font-size: 32px;
 	}
 
 	//Blog 

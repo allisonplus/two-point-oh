@@ -1,14 +1,11 @@
 $(function(){
 	// Good ol' Smooth Scroll
 	$('a').smoothScroll();
-
 });
 
 $('.mobile-icon').on('click', function(){
-	// $('.siteTitle').slideToggle(500);
 	$('#menu-left').slideToggle(500);
 	$('#menu-right').slideToggle(500);
-
 });
 
 
@@ -21,14 +18,17 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
       //if scrolled down more than the height of hero
-      if ($(window).scrollTop() > totalHeight) {
+      if ($(window).scrollTop() > totalHeight && $('.container').width() > 400 ) {
+        console.log("bam!");
         $('nav').addClass('sticky');
-        $('.main').css({"margin-top":"70px"});
+        $('.main').addClass('sticky-margin');
+        // $('.main').css({"margin-top":"70px"});
 
         } else {
         // resetting nav when scrolled up
         $('nav').removeClass('sticky');
-        $('.main').css({"margin-top":"0px"});
+        $('.main').removeClass('sticky-margin');
+        // $('.main').css({"margin-top":"0px"});
 
       }; //end else statement
     }); //end window scroll function  
@@ -37,13 +37,13 @@ $(document).ready(function() {
 
     $('nav').addClass('sticky');
     $('body').css({
-        "margin-top":"105px"
+        // "margin-top":"105px"
     });
 
   } //end else statement
 }); //end function
 
-
-$(window).on('load resize', function(){
-  // do the things
-})
+// $(window).on('load resize', function () {
+//     $('.container').width() == 400;
+//     console.log('less than 400?');
+// });
