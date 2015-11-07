@@ -128,32 +128,41 @@ Welcome Section
 */
 
 section.welcome {
-	padding: 45px 0;
+	// padding: 45px 0;
+	margin-bottom: 65px;
 }
 
 .short-about {
 	display: flex;
-	justify-content:space-between;
-	align-items:center;
+	justify-content:space-around;
+	// align-items:center;
 }
 
 .intro {
-	width: 50%;
-	flex-direction:column;
+	// width: 50%;
+	width:75%;
+	background-color: $smoke;
+	// background-color: $grey;
+	padding: 10px 50px;
+	margin-top: 40px;
+	// flex-direction:column;
 	p {
+		font-size: 20px;
 		line-height: 2;
-		padding-right:8%;
+		// padding-right:8%;
 	}
 }
 
 .welcome-photo-container {
-	width:50%;
+	// width:50%;
+	// width: 100%;
 }
 
 .welcome-photo {
 	// width:25%;
-	max-width:100%;
-	margin:0 auto;
+	// max-width:100%;
+	// margin:0 auto;
+	display: none;
 }
 
 /*
@@ -366,15 +375,15 @@ input[type="text"],
 input[type="email"],,
 input#url,
 textarea {
-  width: 100%;
   display: block;
   margin: 0 auto;
+  width: 100%;
   &:hover {
-  	background: #e6e6e6;
+  	background: lighten(#e6e6e6, 5%);
     transition: all .8s ease;
   }
   &:focus {
-  	background:#e6e6e6;
+  	background: lighten(#e6e6e6, 5%);
     transition: all .8s ease;
   }
 }
@@ -382,41 +391,41 @@ textarea {
 input[type="text"],
 input[type="email"],
 input#url {
-	padding:10px;
-  margin-bottom: 30px;
   border: none;
   border-bottom: 2px solid #e6e6e6;
   box-shadow: none;
+  margin-bottom: 30px;
+	padding:10px;
 }
 
 ::-webkit-input-placeholder {
-   color: $black;
+   color: darken( $grey, 30%);
    font-style: italic;
 }
 
 textarea {
-	width:100%;
-	padding: 0 10px 10px 10px;
+	border: 2px solid #e6e6e6;
 	height: 130px;
 	margin-bottom: 30px;
-	border: 2px solid #e6e6e6;
+	padding: 10px;
+	width:100%;
 }
 
 input[type="submit"] {
-	width:100%;
-	background:white;
-	margin:0;
-	padding:0;
+	background:$gold;
+	color:white;
+	display: block;
 	box-shadow: none;
 	border:none;
-	border:2px solid $gold;
-	// padding:3%;
-	margin:1.5% 1.5% 1.5% 0;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 1.2px;
+	letter-spacing: 2px;
+	margin:0;
+	padding:0;
+	text-transform: capitalize;
+	transition:all .3s ease-in-out;
+	width:100%;
+
 	&:hover {
-		background:$gold;
+		background: darken($gold, 15%);
 		color:white;
 		transition: all .5s ease;
 	}
@@ -427,13 +436,13 @@ input.fpbtn {
 }
 
 .contact-form label {
-	width:100%;
+  color: darken( $grey, 30%);
 	display: block;
-	color:$black;
+  font-style: italic;
 	padding:10px 10px 0 10px;
 	margin-bottom:5px;
-  font-style: italic;
   text-align:left;
+	width:100%;
 }
 
 @import 'responsive';

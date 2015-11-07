@@ -10,18 +10,19 @@ $default: 'Georgia', 'Times', 'Times New Roman', serif;
 
 // Basic Button Styling
 .button {
+	background:$gold;
+	color:white;
 	display: block;
-	border:2px solid $gold;
+	letter-spacing: 2px;
 	margin: 25px auto;
 	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	text-transform: capitalize;
+	transition:all .2s ease-in-out;
 	padding:15px;
-	transition:all .5s ease-in-out;
 
 
 	&:hover {
-		background:$gold;
+		background: darken($gold, 15%);
 		color:white;
 	}
 }
@@ -51,15 +52,20 @@ h2 {
 	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 1.6px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	position: relative;
+
 	&:after {
+    background: $gold;
+    bottom: -10px;
 		content: '';
     display: block;
-    background: $gold;
-    width: 35px;
     height: 2px;
-    margin: 0 auto;
-    margin-top: 10px;
-		margin-bottom: 30px
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 35px;
 	}
 }
 
@@ -78,56 +84,55 @@ a {
 // Page Title on Blog (home.php) & Portfolio Archive (archive-portfolio.php)
 
 .pg-title {
+	color:white;
+	left:50%;
 	font-size: 45px;
 	font-weight:400;
-	color:white;
+	letter-spacing:1.6px;
 	padding:0 20px 5px;
 	position: absolute;
 	top:30%;
-	left:50%;
 	transform: translateX(-50%);
 	z-index: 10;
-	letter-spacing:1.6px;
 }
 
 
 /* paragraphs */
 
 p {
+	font-family: $sans;
 	line-height: 1.5;
 }
 
 /*blockquotes*/
 
 blockquote {
-	// background: #F7F7F7;
+	border-left: 2px solid $gold;
 	font-size: 18px;
 	font-style: italic;
 	margin: 0;
 	padding: 20px;
-	border-left: 2px solid $gold;
 	p {
 		margin-top: 0;
 	}
 }
 
 h4 {
-	text-align: left;
+	color:$gold;
 	font-style: initial;
 	font-weight: 300;
-	color:$gold;
-	// margin-left:10px;
 	padding-left:25px;
+	text-align: left;
 	&:before {
+    background: $gold;
 		content: '';
     clear: both;
-    width: 20px;
-    height: 2px;
-    background: $gold;
     display: block;
+    height: 2px;
     margin: 0 auto;
     margin-bottom: -13px;
     margin-left: -25px;
+    width: 20px;
 	}
 }
 
