@@ -4,15 +4,8 @@
 <div class="main">
 
     <section class="welcome" id="about">
-	    <!-- <h2>Welcome!</h2> -->
 	    <div class="container short-about">
 	      <div class="intro"><?php the_field('autobiographical_snippet', '12'); ?></div>
-	    	<?php $bio = get_field('autobiographical_photo', '12'); ?>
-	      
-	      <!-- <div class="welcome-photo-container">
-		      <img class="welcome-photo" src="<?php echo $bio['sizes']['portfolio-front']; ?> " alt="Portrait of Allison smiling in front of brightly coloured graffiti wall">
-	      </div>  --><!--/.welcome-photo-container-->
-	    	
 			</div> <!--/.container-->
     </section> <!--/.welcome-->
 
