@@ -44,16 +44,8 @@
       <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
-        'theme_locations' => 'left',
-        'menu' => 'left'
-      )); ?>
-
-      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
-
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'right',
-        'menu' => 'right'
+        'theme_locations' => 'main',
+        'menu' => 'main'
       )); ?>
     </div> <!--/.nav-container-->
   </nav>
@@ -66,8 +58,8 @@
         <a href="#" class="mobile-icon">&#9776;</a>
         <?php wp_nav_menu( array(
           'container' => false,
-          'theme_locations' => 'left',
-          'menu' => 'left'
+          'theme_locations' => 'main',
+          'menu' => 'main'
         )); ?>
 
         <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
@@ -98,16 +90,8 @@
       <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
-        'theme_locations' => 'left',
-        'menu' => 'left'
-      )); ?>
-
-      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
-
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'right',
-        'menu' => 'right'
+        'theme_locations' => 'main',
+        'menu' => 'main'
       )); ?>
     </div> <!--/.nav-container-->
   </nav>
@@ -125,16 +109,8 @@
       <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
-        'theme_locations' => 'left',
-        'menu' => 'left'
-      )); ?>
-
-      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
-
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'right',
-        'menu' => 'right'
+        'theme_locations' => 'main',
+        'menu' => 'main'
       )); ?>
     </div> <!--/.nav-container-->
   </nav>
@@ -153,16 +129,8 @@
       <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
-        'theme_locations' => 'left',
-        'menu' => 'left'
-      )); ?>
-
-      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
-
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'right',
-        'menu' => 'right'
+        'theme_locations' => 'main',
+        'menu' => 'main'
       )); ?>
     </div> <!--/.nav-container-->
   </nav>
@@ -176,16 +144,8 @@
       <a href="#" class="mobile-icon">&#9776;</a>
       <?php wp_nav_menu( array(
         'container' => false,
-        'theme_locations' => 'left',
-        'menu' => 'left'
-      )); ?>
-
-      <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
-
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_locations' => 'right',
-        'menu' => 'right'
+        'theme_locations' => 'main',
+        'menu' => 'main'
       )); ?>
     </div> <!--/.nav-container-->
   </nav>
@@ -203,4 +163,3 @@
   <?php } ?>
 
 </header><!--/.header-->
-
