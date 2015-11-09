@@ -17,7 +17,7 @@ function theme_setup() {
 	add_image_size('about', 300, false);
 	add_image_size('page', 800, 200, true);
 	add_image_size('portfolio-archive', 525, 291, true);
-	add_image_size('portfolio-front', 585, false);
+	add_image_size('portfolio-front', 585, 345, true);
 	add_image_size('portfolio', 1070, false);
 	add_image_size('blog', 970, 381, false);
 
