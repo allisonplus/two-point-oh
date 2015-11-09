@@ -1,58 +1,62 @@
 footer {
-	position: relative;
 	clear: both;
-	text-align: center;
 	margin-top:20px;
+	padding-bottom:45px;
+	position: relative;
+	text-align: center;
+
 	p {
 		margin:0;
 		margin-top:5px;
-		padding-bottom:45px;
 	}
 }
 
 // Social Media Icons
 .social-icons {
 	margin:35px 0 25px;
+
 	a {
-		width:32px;
-		height:32px;
-		margin:0 5px;
-		display: inline-block;
 		background-color:black;
 		color:white;
+		display: inline-block;
+		height:32px;
+		margin:0 5px;
 		transform:rotate(45deg);
+		width:32px;
+
 		.fa {
 			font-size: 18px;
 			padding: 7px;
 			transform: rotate(-45deg);
 		}
+
 		&:hover {
 			background:$gold;
 			color:white;
-			transition: all 0.5s ease;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 }
 
 // Link To Top of Page
 .backToTop-container {
-	width:0;
-	height:0;
-	position: absolute;
-	bottom:0;
-	left:50%;
-	transform: translateX(-50%);
 	border: 20px solid transparent;
   border-top: 20px solid transparent;
   border-right: 20px solid transparent;
   border-left: 20px 20px solid transparent;
   border-bottom: 20px solid black;
+	bottom:0;
+	height:0;
+	left:50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width:0;
 
   a.backToTop {
   	color:white;
-  	position: absolute;
-  	left:-6px;
-  	top:-2px;
   	font-size: 20px;
+  	left:-5.5px;
+  	position: absolute;
+  	top:0;
   }
 }

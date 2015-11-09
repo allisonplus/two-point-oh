@@ -22,7 +22,7 @@ $default: 'Georgia', 'Times', 'Times New Roman', serif;
 
 
 	&:hover {
-		background: darken($gold, 15%);
+		background: darken($gold, 20%);
 		color:white;
 	}
 }
@@ -69,10 +69,6 @@ h2 {
 	}
 }
 
-h3 {
-	// color:#FFF;
-}
-
 a {
 	color: $black;
 	text-decoration: none;
@@ -94,6 +90,18 @@ a {
 	top:30%;
 	transform: translateX(-50%);
 	z-index: 10;
+
+		&:after {
+	    background: white;
+	    bottom: -10px;
+			content: '';
+	    display: block;
+	    height: 2px;
+	    left: 50%;
+	    position: absolute;
+	    transform: translateX(-50%);
+	    width: 35px;
+		}
 }
 
 

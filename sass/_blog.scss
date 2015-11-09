@@ -12,16 +12,20 @@
 
  h2 {
  	margin-top:20px;
+
  	&:after {
-	 	content: '';
-	  background: $gold;
-	  display: block;
-	  height: 2px;
-	  width: 155px;
-	  margin: 0 auto;
-	  margin-top: 20px;
+	  bottom:  -20px;
  	}
  }
+}
+
+.entry-content {
+	a {
+		color:$gold;
+		&:hover {
+			color: darken($gold, 25%);
+		}
+	}
 }
 
 .meta-data {
@@ -41,6 +45,11 @@
 
 .category {
 	color:$gold;
+
+	&:hover {
+		color: darken($gold, 25%);
+	}
+
 }
 
 .readMore {
@@ -56,7 +65,7 @@
 	padding:15px;
 
 	&:hover {
-		background: darken($gold, 15%);
+		background: darken($gold, 20%);
 		color:white;
 	}
 }
@@ -103,6 +112,11 @@ ul.tags {
 span.before-after {
 	color:$gold;
 	font-style: italic;
+	
+	&:hover {
+		color: darken($gold, 25%);
+	}
+
 	.fa-angle-left {
 		padding-right:10px;
 	}

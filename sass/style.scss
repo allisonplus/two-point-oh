@@ -32,14 +32,14 @@ body {
 }
 
 .container {
-	max-width: 1170px;
 	margin: 0 auto;
+	max-width: 1170px;
 }
 
 .content {
-	max-width: 1070px;
 	margin:0 auto;
 	margin-top:3%;
+	max-width: 1070px;
 }
 
 .full {
@@ -47,9 +47,9 @@ body {
 }
 
 .content-blog {
-	max-width:970px;
 	margin:0 auto;
 	margin-top:3%;
+	max-width:970px;
 }
 
 /*
@@ -59,54 +59,54 @@ Hero + Title Section on Front Page
 */
 
 .hero {
-	height:88vh;
-	display: flex;
 	align-items:center;
-	justify-content:center;
 	background-size:cover;
 	background-repeat:no-repeat;
+	display: flex;
+	height:88vh;
+	justify-content:center;
 	&:after {
-		content:'';
-		position: absolute;
-		height: 88vh;
-		width: 100%;
 		background-color: $black;
+		bottom: 0;
+		content:'';
+		height: 88vh;
+		left: 0;
 		opacity: 0.5;
 		top: 0;
-		left: 0;
-		bottom: 0;
+		position: absolute;
+		width: 100%;
 	}
 
 	h1 {
 		color:#FFF;
-		padding:25px 0;
-		width:100%;
-		text-transform: uppercase;
-		letter-spacing: 3px;
 		font-size: 70px;
 		font-weight: 900;
+		letter-spacing: 3px;
+		padding:25px 0;
+		text-transform: uppercase;
+		width:100%;
 	}
 	h3 {
-		font-weight: 300;
-		font-size: 16px;
-		letter-spacing: 1.4px;
-		font-style: italic;
 		color:$smoke;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 300;
+		letter-spacing: 1.4px;
 	}
 }
 
 .heroContent {
-	padding:50px 0;
-	border-top:2px solid white;
 	border-bottom:2px solid white;
+	border-top:2px solid white;
+	padding:50px 0;
 	z-index: 10;
 }
 
 .beta-hero {
-	height:200px;
 	background-size: cover;
-	position: relative;
+	height:200px;
 	margin-top:90px;
+	position: relative;
 	&:after {
 		content:'';
 		position: absolute;
@@ -139,31 +139,16 @@ section.welcome {
 }
 
 .intro {
-	// width: 50%;
-	width:75%;
 	background-color: $smoke;
-	// background-color: $grey;
 	padding: 10px 50px;
 	margin-top: 40px;
-	// flex-direction:column;
+	width:75%;
 	p {
 		font-size: 20px;
 		line-height: 2;
-		// padding-right:8%;
 	}
 }
 
-.welcome-photo-container {
-	// width:50%;
-	// width: 100%;
-}
-
-.welcome-photo {
-	// width:25%;
-	// max-width:100%;
-	// margin:0 auto;
-	display: none;
-}
 
 /*
 ====================================
@@ -177,10 +162,9 @@ About Page
 }
 
 .about-info {
-	// width:85%;
-	width:55%;
 	background-color: $grey;
-	padding:15px 20px;
+	padding: 20px 50px;
+	width:55%;
 	p {
 		line-height: 2;
 	}
@@ -191,7 +175,7 @@ About Page
 }
 
 .about-things {
-	width:45%;
+	width:50%;
 }
 
 .factoid {
@@ -200,8 +184,8 @@ About Page
 	margin-bottom: 10px;
 
 	.fa {
-		font-size: 30px;
 		color: $gold;
+		font-size: 30px;
 	}
 
 	.fact-content {
@@ -236,12 +220,12 @@ section.portfolio {
 
 	h3 {
 		&:after {
+		  border-bottom:2px solid $gold;
 			content: '';
 		  display: block;
-		  padding-bottom:15px;
-		  border-bottom:2px solid $gold;
-		  width:40%;
 		  margin: 0 auto;
+		  padding-bottom:15px;
+    	width: 75px;
 		}
 	}
 	.portfolioImage-container {
@@ -252,30 +236,30 @@ section.portfolio {
 		// max-width:585px;
 	}
 	.portfolioContent {
+		background-color: $smoke;
 		display: flex;
 		flex-direction:column;
-		position: relative;
 		justify-content:center;
-		width:50%;
+		position: relative;
 		padding:50px;
-		background-color: $smoke;
+		width:50%;
 	}
 }
 
 .portfolioContent {
 	&:before {
-			right:100%;
-			top: 25%;
 			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
 			border-color: rgba(224, 224, 224, 0);
 			border-right-color: $smoke;
 			border-width: 15px;
+			content: " ";
+			height: 0;
 			margin-top: -15px;
+			position: absolute;
+			pointer-events: none;
+			right:100%;
+			top: 25%;
+			width: 0;
 	}
 }
 
@@ -283,18 +267,18 @@ section.portfolio {
 	flex-direction:row-reverse;
 	.portfolioContent {
 		&:before {
-			right: -5%;
-			top: 25%;
 			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
 			border-color: rgba(224, 224, 224, 0);
 			border-left-color: $smoke;
 			border-width: 15px;
+			content: " ";
+			height: 0;
 			margin-top: -15px;
+			pointer-events: none;
+			position: absolute;
+			right: -5%;
+			top: 25%;
+			width: 0;
 		}
 	}
 }
@@ -339,19 +323,20 @@ section.contact {
 }
 
 .emailMe {
-	font-family: $default;
-	display: block;
-	color:white;
 	border:2px solid white;
-	width:25%;
-	margin: 0 auto;
+	color:white;
+	display: block;
+	font-family: $default;
 	letter-spacing: 1.5px;
-	padding:15px 0;
+	margin: 0 auto;
 	margin-top:45px;
+	padding:15px 0;
+	width:25%;
+
 	&:hover {
 		background:white;
 		color:black;
-		transition:all .5s ease;
+		transition:all .3s ease-in-out;
 	}
 }
 
@@ -366,9 +351,9 @@ section.contact {
 //Form
 
 form.myForm {
-	width:40%;
 	display: block;
 	margin:0 auto;
+	width:40%;
 }
 
 input[type="text"],
@@ -378,11 +363,15 @@ textarea {
   display: block;
   margin: 0 auto;
   width: 100%;
+
   &:hover {
   	background: lighten(#e6e6e6, 5%);
     transition: all .8s ease;
   }
+
   &:focus {
+  	outline: 0; //removes focus styles
+  	outline: 2px solid $highlight; //re-adds focus styles
   	background: lighten(#e6e6e6, 5%);
     transition: all .8s ease;
   }
@@ -413,10 +402,10 @@ textarea {
 
 input[type="submit"] {
 	background:$gold;
+	border:none;
+	box-shadow: none;
 	color:white;
 	display: block;
-	box-shadow: none;
-	border:none;
 	letter-spacing: 2px;
 	margin:0;
 	padding:0;
