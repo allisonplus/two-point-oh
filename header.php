@@ -61,14 +61,6 @@
           'theme_locations' => 'main',
           'menu' => 'main'
         )); ?>
-
-        <a class="home-icon" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/home-icon.png" alt="Allison Tarr Home Icon"></a>
-
-        <?php wp_nav_menu( array(
-          'container' => false,
-          'theme_locations' => 'right',
-          'menu' => 'right'
-        )); ?>
       </div> <!--/.nav-container-->
     </nav>
 
