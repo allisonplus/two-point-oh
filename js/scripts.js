@@ -4,8 +4,7 @@ $(function(){
 });
 
 $('.mobile-icon').on('click', function(){
-	$('#menu-left').slideToggle(500);
-	$('#menu-right').slideToggle(500);
+	$('#menu-main').slideToggle(500);
 });
 
 
