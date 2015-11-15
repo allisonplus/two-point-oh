@@ -20,7 +20,6 @@ $default: 'Georgia', 'Times', 'Times New Roman', serif;
 	transition:all .2s ease-in-out;
 	padding:15px;
 
-
 	&:hover {
 		background: darken($gold, 20%);
 		color:white;
@@ -57,14 +56,11 @@ h2 {
 	position: relative;
 
 	&:after {
-    background: $gold;
-    bottom: -10px;
-		content: '';
+    border-bottom: 2px solid $gold;
+    content: '';
     display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    padding-bottom: 15px;
     width: 35px;
 	}
 }
@@ -173,23 +169,6 @@ ul li, ol li {
 	padding: 3px;
 }
 
-/*PRE*/
-
-pre {
-	// max-width:960px;
-// 	background-color:$smoke;
-// 	padding: 20px 55px;
-// 	border-radius: 2px;
-// 	border: 1px solid $grey;
-}
-
-code {
-	// max-width:960px;
-// 	background-color:$smoke;
-// 	border-radius: 2px;
-// 	border: 1px solid $grey;
-}
-
 /*
 ====================================
 Global Classes / Wordpress Specific
@@ -197,8 +176,8 @@ Global Classes / Wordpress Specific
 */
 
 .aligncenter {
-	text-align: center;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .alignleft {
@@ -219,7 +198,7 @@ img {
 }
 
 .clear {
-	width: 100%;
-	float: left;
 	clear: both;
+	float: left;
+	width: 100%;
 }

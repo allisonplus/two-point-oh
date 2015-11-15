@@ -413,7 +413,6 @@ Media Queries (Front Page)
 		background-color: white;
 		margin-top:0;
 		z-index: 100;
-
 	}
 
 	.mobile-icon {
@@ -421,10 +420,6 @@ Media Queries (Front Page)
 		position: absolute;
 		padding-left: 10px;
 		padding-top: 5px;
-	}
-
-	ul#menu-left {
-		padding-bottom:0;
 	}
 
 	ul.menu li {
@@ -445,10 +440,18 @@ Media Queries (Front Page)
 
 	.intro {
 		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding: 10px;
 	}
 
-	.welcome-photo-container {
-		// width: 90%;
+	section.welcome {
+		margin-bottom: 0;
+		padding: 25px 0 15px;
+	}
+
+	h2:after {
+		margin-bottom:-5px;
 	}
 
 	.portfolioItem {
@@ -567,6 +570,10 @@ Media Queries (Front Page)
 		max-width:375px;
 	}
 
+	.hero h1 {
+  	font-size: 40px;
+	}
+
 	.full-portfolio {
 		width:70%;
 	}
@@ -593,6 +600,10 @@ Media Queries (Front Page)
 	//Front Page
 	.hero h1 {
   	font-size: 32px;
+	}
+
+	.emailMe {
+		width: 75%;
 	}
 
 	//Blog 
