@@ -30,11 +30,11 @@ Portfolio Section (Archive Items)
 }
 
 .portfolioItem-archive {
-	position: relative;
-	background-color:$smoke;
-	width: calc( ( 100% / 2 ) - (5px * 2));
 	align-content:space-between;
+	background-color:$smoke;
 	margin-bottom:25px;
+	position: relative;
+	width: calc( ( 100% / 2 ) - (5px * 2));
 }
 
 .portfolioImage-archive {
@@ -53,18 +53,18 @@ Portfolio Section (Archive Items)
 
 .portfolioContent-archive {
 	&:before {
-			right:25%;
-			top: -8%;
+			border-bottom-color: $smoke;
+			border-color: rgba(224, 224, 224, 0);
+			border-width: 25px;
 			border: solid transparent;
 			content: " ";
 			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-			border-color: rgba(224, 224, 224, 0);
-			border-bottom-color: $smoke;
-			border-width: 25px;
 			margin-top: -25px;
+			pointer-events: none;
+			position: absolute;
+			right:25%;
+			top: -8%;
+			width: 0;
 	}
 }
 
@@ -73,24 +73,23 @@ Portfolio Section (Archive Items)
 	padding: 0;
 
 	li {
-	  padding: 5px;
-	  display: inline-block;
-	  background-color: white;
-	  margin: 5px 8px 5px 0;
-	  color:#606060;
-	  font-size: 14px;
-	  border: 1px solid #ccc;
-	  letter-spacing: 1px;
-	  font-size: 12.5px;
+		background-color: white;
+		border: 1px solid #ccc;
+		color:#606060;
+		display: inline-block;
+		font-size: 14px;
+		letter-spacing: 1px;
+		margin: 5px 8px 5px 0;
+		padding: 5px;
 	}
 }
 
 .archive-btn {
-	width:40%;
-	position: absolute;
 	bottom:0;
 	left:50%;
+	position: absolute;
 	transform: translateX(-50%);
+	width:40%;
 }
 
 /*
@@ -100,9 +99,9 @@ Portfolio Section (Single Item)
 */
 
 .single-whole-content {
-	margin-top:3%;
 	display: flex;
 	justify-content: space-between;
+	margin-top:3%;
 }
 
 .single-left-content,
@@ -114,11 +113,11 @@ Portfolio Section (Single Item)
 }
 
 .single-left-content {
-	width:65%;
+	width: 65%;
 	h2 {
 		text-align: left;
 		&:after {
-			margin:initial;
+			margin: initial;
 			margin: 15px 0;
 		}
 	}
@@ -132,13 +131,13 @@ Portfolio Section (Single Item)
 		padding-top:10px;
 		&:after {
 			margin:0;
-    	margin-top: 18px;
+			margin-top: 18px;
 			margin-bottom: 15px
 		}
 	}
 }
 
-// Skills Used 
+// Skills Used
 
 ul.tech {
 	list-style-type: none;

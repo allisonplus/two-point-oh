@@ -34,7 +34,7 @@ function theme_setup() {
 	$newsizes = array_merge($sizes, $addsizes);
 	return $newsizes;
 	}
-	
+
 	// function to set default image link to none
 	update_option('image_default_link_type','none');
 
@@ -43,16 +43,16 @@ function theme_setup() {
 	$files = get_children('post_parent='.get_the_ID().'&post_type=attachment
 	&post_mime_type=image&order=desc');
 	  if($files) :
-	    $keys = array_reverse(array_keys($files));
-	    $j=0;
-	    $num = $keys[$j];
-	    $image=wp_get_attachment_image($num, 'blog', true);
-	    $imagepieces = explode('"', $image);
-	    $imagepath = $imagepieces[1];
-	    $main=wp_get_attachment_url($num);
+			$keys = array_reverse(array_keys($files));
+			$j=0;
+			$num = $keys[$j];
+			$image=wp_get_attachment_image($num, 'blog', true);
+			$imagepieces = explode('"', $image);
+			$imagepath = $imagepieces[1];
+			$main=wp_get_attachment_url($num);
 			$template=get_template_directory();
 			$the_title=get_the_title();
-	    print "<img src='$main' alt='$the_title' class='frame' />";
+			print "<img src='$main' alt='$the_title' class='frame' />";
 	  endif;
 	}
 
