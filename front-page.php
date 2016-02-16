@@ -14,39 +14,37 @@
 	    	<h2>Portfolio</h2>
 
 	    	<?php $portfolioQuery = new WP_Query(array(
-	    	    'posts_per_page' => 4, 
+	    	    'posts_per_page' => 4,
 	    	    'post_type' => 'portfolio',
-	    	    'post__not_in' => array( $post->ID )  
+	    	    'post__not_in' => array( $post->ID )
 	    	) ); ?>
 
 	    	<?php if ( $portfolioQuery->have_posts() ) : ?>
 
-	    	  <?php while ( $portfolioQuery->have_posts() ) : $portfolioQuery->the_post(); ?> 
-	    	        
+	    	  <?php while ( $portfolioQuery->have_posts() ) : $portfolioQuery->the_post(); ?>
+
 	    	<div class="portfolioItem">
 
-	    	  <?php $image = get_field('featured_img'); ?>
+					<?php $image = get_field('featured_img'); ?>
 
-					<div class="portfolioImage-container">
-	    			<img class="portfolioImage" src="<?php echo $image['sizes']['portfolio-front']; ?> " alt="">
-	    		</div>
+					<div class="portfolioImage" style="background: url(<?php echo $image['sizes']['portfolio-front']; ?>)">
+					</div>
 
-	    	  <div class="portfolioContent">
-	    	  	<!-- <!-- <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> -->
-	    	  	<h3><a href="<?php the_permalink(); ?>"><?php the_field('project_type'); ?></a></h3>
-	    	  
-	    	    <p><?php the_field('blurb'); ?></p>
+					<div class="portfolioContent">
+						<h3><a href="<?php the_permalink(); ?>"><?php the_field('project_type'); ?></a></h3>
 
-	    			<a class="button to-single" href="<?php the_field('url'); ?>" target="_blank">Read More</a>
-	    	  </div> <!--/.portfolioContent-->
-	    	</div> <!--/.portfolioItem-->
+						<p><?php the_field('blurb'); ?></p>
+
+						<a class="button to-single" href="<?php the_field('url'); ?>" target="_blank">Read More</a>
+					</div> <!--/.portfolioContent-->
+				</div> <!--/.portfolioItem-->
 
 	    	  <?php endwhile; ?>
 
 	    	    <?php wp_reset_postdata(); ?>
 
 	    	<?php else:  ?>
-	    	  
+
 	    	<?php endif; ?>
 
 	    	<a class="button full-portfolio" href="http://localhost:8888/portfolio2015/portfolio">See Full Portfolio</a>
@@ -76,8 +74,8 @@
 	    	</form>
 
 	   </div> <!--/.contact-form-->
-    	
-  </section> <!--/.contact--> 		
+
+  </section> <!--/.contact-->
 
 </div> <!-- /.main -->
 

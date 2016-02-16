@@ -58,14 +58,6 @@ Media Queries (Front Page)
 		right:-7%;
 	}
 
-	.portfolioItem .portfolioImage {
-		// max-width:585px;
-	}
-
-	.portfolioItem .portfolioImage-container {
-		// overflow:hidden;
-	}
-
 	// Portfolio Archive
 	.portfolioContent-archive:before {
 		top:-7%;
@@ -472,7 +464,7 @@ Media Queries (Front Page)
 		}
 	}
 
-	.portfolioItem .portfolioImage-container {
+	.portfolioItem .portfolioImage {
 		width:90%;
 	}
 
@@ -600,6 +592,11 @@ Media Queries (Front Page)
 	//Front Page
 	.hero h1 {
   	font-size: 32px;
+	}
+
+	.portfolioItem .portfolioImage {
+		height: 200px;
+		background-size: cover;
 	}
 
 	.emailMe {

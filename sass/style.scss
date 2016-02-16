@@ -228,24 +228,19 @@ section.portfolio {
 			width: 75px;
 		}
 	}
-	.portfolioImage-container {
+	.portfolioImage {
 		width: 50%;
 		display: flex;
 		align-items: stretch;
 	}
-	.portfolioImage {
-		display: block;
-		background-size: cover;
-		// max-width:585px;
-		max-width: 100%;
-	}
+
 	.portfolioContent {
 		background-color: $smoke;
 		display: flex;
 		flex-direction:column;
 		justify-content:center;
 		position: relative;
-		padding: 0 45px;
+		padding: 45px;
 		width:50%;
 	}
 }
