@@ -27,7 +27,7 @@
 
 					<?php $image = get_field('featured_img'); ?>
 
-					<div class="portfolioImage" style="background: url(<?php echo $image['sizes']['portfolio-front']; ?>)">
+					<div class="portfolioImage" style="background: url(<?php echo $image['sizes']['portfolio-front']; ?>)"; "background-size: cover">
 					</div>
 
 					<div class="portfolioContent">
