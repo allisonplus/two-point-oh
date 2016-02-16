@@ -66,7 +66,7 @@ Media Queries (Front Page)
 		// overflow:hidden;
 	}
 
-	// Portfolio Archive 
+	// Portfolio Archive
 	.portfolioContent-archive:before {
 		top:-7%;
 	}
@@ -90,7 +90,7 @@ Media Queries (Front Page)
 		width:50%;
 	}
 
-	//Blog 
+	//Blog
 	.comment-list {
 		padding-left:0;
 	}
@@ -124,14 +124,14 @@ Media Queries (Front Page)
 	}
 
 	form.myForm {
-	  width: 60%;
+		width: 60%;
 	}
 	//Portfolio Archive
 	.portfolioItem-archive {
 		width: calc(100% - (5px * 2));
 	}
 
-	//Portfolio Single 
+	//Portfolio Single
 	.single-left-content h2 {
 		font-size: 24px;
 		&:after {
@@ -147,8 +147,8 @@ Media Queries (Front Page)
 	.project-link {
 		width:100%;
 		font-size: 15px;
-	}	
-	//Blog 
+	}
+	//Blog
 	.blog-post-text h2 {
 		font-size: 24px;
 	}
@@ -156,16 +156,16 @@ Media Queries (Front Page)
 		margin-top:15px;
 	}
 	.meta-data {
-    margin: 0;
-  }
-  .entry-title {
-  	&:after {
-  		margin-bottom:15px;
-  	}
-  }
+		margin: 0;
+	}
+	.entry-title {
+		&:after {
+			margin-bottom:15px;
+		}
+	}
 	.entry-content img {
-    max-width: 570px;
-    height: auto;
+		max-width: 570px;
+		height: auto;
 	}
 	.readMore {
 		width:30%;
@@ -241,7 +241,7 @@ Media Queries (Front Page)
 		width:70%;
 	}
 
-	//About Page 
+	//About Page
 	.about-things {
 		margin-top:4%;
 	}
@@ -254,7 +254,7 @@ Media Queries (Front Page)
     width: 30%;
 	}
 
-	//Portfolio Single 
+	//Portfolio Single
 	.single-left-content {
     width: 60%;
 	}
@@ -387,7 +387,7 @@ Media Queries (Front Page)
 	.entry-content img {
 		max-width:400px;
 	}
-	
+
 	.nav-container {
 		margin:0 auto;
 	}
@@ -606,7 +606,7 @@ Media Queries (Front Page)
 		width: 75%;
 	}
 
-	//Blog 
+	//Blog
 	.entry-content img {
 		max-width: 320px;
 	}

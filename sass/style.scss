@@ -245,8 +245,7 @@ section.portfolio {
 		flex-direction:column;
 		justify-content:center;
 		position: relative;
-		// padding:20px 40px;
-		// padding:20px;
+		padding: 0 45px;
 		width:50%;
 	}
 }
@@ -278,7 +277,7 @@ section.portfolio {
 			border-color: rgba(224, 224, 224, 0);
 			border-left-color: $smoke;
 			border-width: 15px;
-			content: " ";
+			content: "";
 			height: 0;
 			margin-top: -15px;
 			pointer-events: none;
@@ -364,7 +363,7 @@ form.myForm {
 }
 
 input[type="text"],
-input[type="email"],,
+input[type="email"],
 input#url,
 textarea {
 	display: block;
@@ -435,8 +434,8 @@ input.fpbtn {
 	color: darken( $grey, 30%);
 	display: block;
 	font-style: italic;
-	padding:10px 10px 0 10px;
 	margin-bottom:5px;
+	padding:10px 10px 0 10px;
 	text-align:left;
 	width:100%;
 }
