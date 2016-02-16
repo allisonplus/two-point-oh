@@ -10,30 +10,30 @@ nav {
 }
 
 .nav-container {
-	max-width: 800px;
-	margin:1% auto;
+	align-items:flex-start;
 	display: flex;
 	flex-direction:row;
 	justify-content:space-between;
-	align-items:flex-start;
+	margin:1% auto;
+	max-width: 800px;
 }
 
 .mobile-icon {
+	color:$smoke;
 	display: none;
 	font-size: 40px;
-	color:$smoke;
 }
 
 .sticky {
-	width: 100%;
-	z-index: 200;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+	left:50%;
+	margin: 0;
 	position: fixed;
 	top: 0;
-	left:50%;
-	background-color: white;
-	margin: 0;
 	transform: translateX(-50%);
-	box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+	width: 100%;
+	z-index: 200;
 }
 
 .sticky-margin {
@@ -41,13 +41,13 @@ nav {
 }
 
 ul.menu {
+	display: flex;
+	flex-direction:row;
 	font-family: $sans;
+	justify-content:space-around;
 	margin: 0;
 	padding: 10px;
 	width:100%;
-	display: flex;
-	flex-direction:row;
-	justify-content:space-around;
 
 	li {
 		width:25%;
