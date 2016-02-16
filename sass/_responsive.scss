@@ -109,7 +109,7 @@ Media Queries (Front Page)
 		letter-spacing: 1.3px;
 	}
 	.portfolioItem .portfolioContent {
-		padding:10px 15px;
+		padding: 30px 35px;
 	}
 	.portfolioItem:nth-child(odd) .portfolioContent:before {
 	  right: -9%;
@@ -175,9 +175,9 @@ Media Queries (Front Page)
 	}
 
 	.to-single {
+		font-size: 14px;
 		margin:5px auto;
 		padding:8px;
-		font-size: 14px;
 	}
 
 	.about {
@@ -185,17 +185,17 @@ Media Queries (Front Page)
 	}
 
 	.about-info {
-		width:100%;
 		padding:15px 40px;
+		width:100%;
 	}
 
 	.about-things {
 		h2 {
 			width:100%;
 		}
-		width:100%;
 		display: flex;
 		flex-wrap:wrap;
+		width:100%;
 	}
 
 	.factoid {

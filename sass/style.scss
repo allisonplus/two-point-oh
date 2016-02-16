@@ -256,7 +256,7 @@ section.portfolio {
 		margin-top: -15px;
 		position: absolute;
 		pointer-events: none;
-		right:100%;
+		right: calc(100% - 1px);
 		top: 25%;
 		width: 0;
 	}
